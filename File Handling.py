@@ -21,7 +21,7 @@ with open("myfile.txt","r") as data:
 #now remove the space line
 data=open("myfile.txt","r")
 
-list=[]
+"""list=[]
 counter=0
 for line in data:
     counter += 1
@@ -30,8 +30,14 @@ for line in data:
         temp=line.strip()
         print(temp,counter)
     #print(f"{counter}  {line}")
+"""
+#Appand the file
+f=open("myfile.txt","a")
+f.write("tttttttttttttttttttttt\nbbbbbbbbbbbbbbbbbbbbbb\nnnnnnnnnnnnnnnnnnnnnnnnn")
+f.close()
 
-
+myread=open("myfile.txt","r")
+print(myread.read())
 
 
 
